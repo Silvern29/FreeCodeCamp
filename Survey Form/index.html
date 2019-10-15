@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Your Feedback</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="https://tramino.s3.amazonaws.com/s/himmelreich-kleinwalsertal/118812/200x150.jpg" alt="logo Haus Himmelreich">
+            <h1 id="title">Haus Himmelreich</h1>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <p id="description">We hope you enjoyed your stay with us.<br>Please take a minute and give us your feedback</p>
+        </div>
+
+        <form actions="" method="POST" id="survey-form">
+            <div class="name">
+                <label id="name-label" for="name">Name: </label>
+                <input id="name" name="name" required type="text" placeholder="Enter your full name">
+            </div>
+            <br>
+            <div class="email">
+                <label id="email-label" for="email">Email: </label>
+                <input id="email" name="email" required type="email" placeholder="Enter your email">
+            </div>
+            <br>
+            <div class="number">
+                <label id="number-label" for="number">Give your stay a rating of 1 to 10 points:</label><br>
+                <input id="number" name="number" required type="number" min="1" max="10" placeholder="1 - 10">
+            </div>
+            <br>
+            <div class="how">
+                <label id="dropdown-label" for="dropdown">How did you hear about us: </label>
+                <select id="dropdown" name="dropdown">
+                    <option>Friends</option>
+                    <option>Internet Advertisement</option>
+                    <option>Booking Sites</option>
+                    <option>Magazin</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <div>
+            <p>Please rate the following points from good to bad:</p>
+            <ul class="radios">
+                <li class="surroundings">
+                    <span>Surroundings:</span>
+                    <input type="radio" id="goodsurroundings" name="surroundings" value="good" >
+                    <label for="goodsurroundings">good</label>
+                    <input type="radio" id="oksurroundings" name="surroundings" value="ok" >
+                    <label for="oksurroundings">ok</label>
+                    <input type="radio" id="badsurroundings" name="surroundings" value="bad" >
+                    <label for="badsurroundings">bad</label>
+                </li>
+                <li class="room">
+                    <span>Room:</span>
+                    <input type="radio" id="goodroom" name="room" value="good" >
+                    <label for="goodroom">good</label>
+                    <input type="radio" id="okroom" name="room" value="ok" >
+                    <label for="okroom">ok</label>
+                    <input type="radio" id="badroom" name="room" value="bad" >
+                    <label for="badroom">bad</label>
+                </li>
+            </ul>
+            </div> 
+            <div class="checkbox">
+                <p>What of the following was really helpful for you?</p>
+                <input type="checkbox" id="offer" name="offer" value="offer">
+                <label for="offer">Detailed Offer</label>
+                <input type="checkbox" id="cancel" name="cancel" value="cancel">
+                <label for="cancel">Cancellation Policy</label>
+                <input type="checkbox" id="journey" name="journey" value="journey">
+                <label for="journey">Journey</label>
+                <br>
+                <input type="checkbox" id="hiking" name="hiking" value="hiking">
+                <label for="hiking">Hiking Recommendation</label>
+                <input type="checkbox" id="ski" name="ski" value="ski">
+                <label for="ski">Info about Skiing</label>
+            </div>
+            <br>
+            <div class="textarea">
+                <label for="opinion">Your best story during your holiday in the Himmelreich:</label>
+                <br>
+                <textarea id="opinion" name="opinion" cols="50" rows="10"></textarea>
+            </div>
+            <br>
+            <div class="button">
+                <button id="submit" type="submit">Submit your feedback</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
